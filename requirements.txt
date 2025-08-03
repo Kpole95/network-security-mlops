@@ -11,3 +11,6 @@ beautifulsoup4
 gunicorn
 dill
 python-dotenv
+pymango
+certifi
+# -e .
