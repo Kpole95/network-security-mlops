@@ -1,0 +1,1 @@
+### This project is an end-to-end MLOps pipeline for detecting malicious network activity using machine learning. It includes data preprocessing (ETL), model training, experiment tracking, deployment with FastAPI, containerization using Docker, and CI/CD setup.
