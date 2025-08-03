@@ -1,3 +1,4 @@
 cybervenv
 venv
 .env
+python==3.10
