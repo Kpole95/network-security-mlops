@@ -1,0 +1,13 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn
+catboost
+xgboost
+Flask
+requests
+beautifulsoup4 
+gunicorn
+dill
+python-dotenv
