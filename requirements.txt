@@ -13,4 +13,7 @@ dill
 python-dotenv
 pymango
 certifi
+pymongo[srv]==3.6
+
+
 # -e .
