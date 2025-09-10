@@ -10,5 +10,5 @@ db = client["NetworkData"]
 collection = db["NetworkData"]
 
 docs = list(collection.find())
-print("Fetched rows:", len(docs))  # Should print 11055
+print("Fetched rows:", len(docs))
 print("First row keys:", docs[0].keys() if docs else "Empty")
