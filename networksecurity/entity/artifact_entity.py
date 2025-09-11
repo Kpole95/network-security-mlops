@@ -23,16 +23,16 @@ class DataTransformationArtifact:
     transformed_train_file_path: str
     transformed_test_file_path: str
 
-@dataclass
-class ClassificationMetricArtifact:
-    """artifact generated after evaluation of the model"""
-    f1_score: float
-    precision_score: float
-    recall_score: float
+# @dataclass
+# class ClassificationMetricArtifact:
+#     """artifact generated after evaluation of the model"""
+#     f1_score: float
+#     precision_score: float
+#     recall_score: float
     
-@dataclass
-class ModelTrainerArtifact:
-    """artifact generated after tranung a model"""
-    trained_model_file_path: str
-    train_metric_artifact: ClassificationMetricArtifact
-    test_metric_artifact: ClassificationMetricArtifact
+# @dataclass
+# class ModelTrainerArtifact:
+#     """artifact generated after tranung a model"""
+#     trained_model_file_path: str
+#     train_metric_artifact: ClassificationMetricArtifact
+#     test_metric_artifact: ClassificationMetricArtifact
