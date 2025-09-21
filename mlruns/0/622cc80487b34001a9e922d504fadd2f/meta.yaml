@@ -1,0 +1,14 @@
+artifact_uri: file:///E:/projects/cybersecurity/mlruns/0/622cc80487b34001a9e922d504fadd2f/artifacts
+end_time: 1758387791348
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 622cc80487b34001a9e922d504fadd2f
+run_name: vaunted-loon-553
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758387763804
+status: 3
+tags: []
+user_id: krish

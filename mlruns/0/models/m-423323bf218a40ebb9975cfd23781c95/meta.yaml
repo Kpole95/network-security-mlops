@@ -1,0 +1,10 @@
+artifact_location: file:///E:/projects/cybersecurity/mlruns/0/models/m-423323bf218a40ebb9975cfd23781c95/artifacts
+creation_timestamp: 1758387763953
+experiment_id: '0'
+last_updated_timestamp: 1758387791328
+model_id: m-423323bf218a40ebb9975cfd23781c95
+model_type: null
+name: model
+source_run_id: 622cc80487b34001a9e922d504fadd2f
+status: 2
+status_message: null
