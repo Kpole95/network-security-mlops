@@ -1,6 +1,3 @@
-import networksecurity.constants.training_pipeline as tp
-print("TRAINING PIPELINE FILE:", tp.__file__)
-
 
 from datetime import datetime
 import os
@@ -29,6 +26,7 @@ class TrainingPipelineConfig:
 
         # timestamp dir for this pipeline runs artifacts
         self.artifact_dir: str =os.path.join(self.artifact_name, timestamp)
+        self.model_dir=os.path.join("final_model")
         self.timestamp: str=timestamp
 
 
@@ -64,7 +62,7 @@ class DataIngestionConfig:
                 self.data_ingestion_dir, training_pipeline.DATA_INGESTION_INGESTED_DIR, training_pipeline.TEST_FILE_NAME
             )
          
-        self.train_test_split_ratio: float = training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATION
+        self.train_test_split_ratio: float = training_pipeline.DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO
         self.collection_name: str = training_pipeline.DATA_INGESTION_COLLECTION_NAME
         self.database_name: str = training_pipeline.DATA_INGESTION_DATABASE_NAME
 
@@ -135,4 +133,4 @@ class ModelTrainerConfig:
             training_pipeline.MODEL_FILE_NAME
         )
         self.expected_accuracy: float = training_pipeline.MODEL_TRAINER_EXPECTED_SCORE
-        self.overfitting_underfitting_threshold = training_pipeline.MODEL_TRAINER_OVER_FIITING_UNDER_FITTING_THRESHOLD
+        self.overfitting_underfitting_threshold = training_pipeline.MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD

@@ -1,0 +1,37 @@
+[2025-09-21 19:23:57,158] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-21 19:23:57,165] 107 dagshub - INFO - Accessing as krishnapole90
+[2025-09-21 19:23:58,660] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/krishnapole90/network-security-mlops "HTTP/1.1 200 OK"
+[2025-09-21 19:24:00,061] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[2025-09-21 19:24:00,063] 107 dagshub - INFO - Initialized MLflow to track repo "krishnapole90/network-security-mlops"
+[2025-09-21 19:24:00,064] 107 dagshub - INFO - Repository krishnapole90/network-security-mlops initialized!
+[2025-09-21 19:24:00,065] 20 root - INFO - Initiate the data ingestion
+[2025-09-21 19:24:15,357] 62 root - INFO - Fetched 11055 rows from MongoDB collection NetworkData
+[2025-09-21 19:24:15,646] 96 root - INFO - Data exported to feature store at Artifacts\09_21_2025_19_23_40\data_ingestion\feature_store\phisingData.csv
+[2025-09-21 19:24:15,672] 123 root - INFO - Performed train/test split
+[2025-09-21 19:24:15,718] 131 root - INFO - Saved train/test datasets successfully
+[2025-09-21 19:24:15,719] 22 root - INFO - Data Initiation Completed
+[2025-09-21 19:24:15,733] 26 root - INFO - Initiate the data Validation
+[2025-09-21 19:24:15,816] 65 root - INFO - Expected columns: 2
+[2025-09-21 19:24:15,816] 66 root - INFO - Found columns: 31
+[2025-09-21 19:24:15,816] 132 root - INFO - All numeric columns are present.
+[2025-09-21 19:24:15,816] 65 root - INFO - Expected columns: 2
+[2025-09-21 19:24:15,816] 66 root - INFO - Found columns: 31
+[2025-09-21 19:24:15,816] 132 root - INFO - All numeric columns are present.
+[2025-09-21 19:24:15,969] 28 root - INFO - data Validation Completed
+[2025-09-21 19:24:15,970] 31 root - INFO - data Transformation started
+[2025-09-21 19:24:15,970] 109 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[2025-09-21 19:24:15,970] 111 root - INFO - Starting data transformation
+[2025-09-21 19:24:15,993] 83 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[2025-09-21 19:24:15,993] 87 root - INFO - Initialize KNNImputer with params: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-09-21 19:24:16,004] 75 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-21 19:24:16,007] 79 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-21 19:24:16,007] 75 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-21 19:24:16,009] 79 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-21 19:24:16,011] 35 root - INFO - data Transformation completed
+[2025-09-21 19:24:16,012] 38 root - INFO - Model Training sstared
+[2025-09-21 19:27:30,418] 75 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-21 19:27:30,419] 79 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-21 19:27:30,419] 75 root - INFO - Entered the save_object method of MainUtils class
+[2025-09-21 19:27:30,422] 79 root - INFO - Exited the save_object method of MainUtils class
+[2025-09-21 19:27:30,422] 199 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\09_21_2025_19_23_40\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9916970433373835, precision_score=0.9896928051738076, recall_score=0.9937094155844156), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9696479158235533, precision_score=0.964573268921095, recall_score=0.9747762408462164))
+[2025-09-21 19:27:30,423] 43 root - INFO - Model Training artifact created
