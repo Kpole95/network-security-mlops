@@ -216,6 +216,10 @@ class TrainingPipeline:
 
         Raises:
             NetworkSecurityException: If any stage of the pipeline fails.
+        
+        Example:
+            pipeline = TrainingPipeline()
+            artifact = pipeline.run_pipeline()
         """
         try:
             # Step 1: Data Ingestion

@@ -63,4 +63,4 @@ MODEL_TRAINER_TRAINED_MODEL_NAME: str = "model.pkl"
 MODEL_TRAINER_EXPECTED_SCORE: float = 0.6  # minimum acceptable model score
 MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD: float = 0.05  # allowed diff between train/test score
 
-TRAINING_BUCKET_NAME = "networksecurity"
+TRAINING_BUCKET_NAME = "network-security-mlops-krishna2025"

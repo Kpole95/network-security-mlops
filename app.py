@@ -24,7 +24,7 @@ from networksecurity.constants.training_pipeline import (
 
 # Load environment variables
 load_dotenv()
-mongo_db_url = os.getenv("MONGODB_URL_KEY")
+mongo_db_url = os.getenv("MONGO_DB_URL")
 print(f"MongoDB URL loaded: {mongo_db_url}")
 
 # Certifi CA file for TLS connection
