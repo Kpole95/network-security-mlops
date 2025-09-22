@@ -2,11 +2,14 @@ name: workflow
 
 on:
   push:
-      branches:
-        - main
-      paths-ignore:
-        - 'README.md'
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
 
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   integration:
