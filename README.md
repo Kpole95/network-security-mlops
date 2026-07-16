@@ -318,5 +318,5 @@ docker run -p 8000:8000 \
 ## Author
 
 **Murali Krishna Pole**
-Azure Data Engineer | MLOps
+AI/ML & MLOps Engineer
 [LinkedIn](https://linkedin.com/in/kpole) · [GitHub](https://github.com/Kpole95) · [DagsHub](https://dagshub.com/krishnapole90)
