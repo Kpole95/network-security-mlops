@@ -19,3 +19,5 @@ cybervenv/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+project_details/
